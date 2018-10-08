@@ -1,11 +1,2 @@
-# Webpack4 Babel7 Sass set
-
-## npm i
-to install dependencies
-
-## npm run build 
-to build project
-
-### open your index.html file
-### enjoy
-![](https://zhitanska.com/wp-content/uploads/2017/08/IR-1.jpg)
+# Верстка по макету
+![макет lemon](https://uc1397815c5b74875f56cb766c7f.previews.dropboxusercontent.com/p/thumb/AANFMP0OyrgiZB-vAD38fOfmQUR196kXEoZygvSDLx7DZ2eO0XLv5pa3rq_2uwnuJe9Lftojmw0UklddMayhzpLNliJ6jdEoWxWGvIclClpaCWtVGxb_x2Aq0A4ZwjiYVvOOL90ofaXJmfRzL_ZxohzemtygDPfd12cn5MIL3uFVeGgih-pM7fgqKlrL9z_0P0PGQzggovb-qa6axaF7ris7o_hzdnC_raFXkkbwqH-5TQ/p.jpeg?size=1280x960&size_mode=3)y
