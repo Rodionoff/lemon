@@ -1,0 +1,516 @@
+// type your sass here
+
+$primary-color: #f8f8f8
+$secondary-color: #ffffff
+
+%button-reset 
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+
+  background: transparent
+
+  /* inherit font & color from ancestor */
+  color: inherit
+  font: inherit
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit
+  -moz-osx-font-smoothing: inherit
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none
+
+html, body
+  margin: 0
+
+body 
+  background: #eaeaea
+
+img
+  width: 100%
+
+header
+  width: 1120px 
+  padding-top: 245px 
+  padding-bottom: 115px
+  margin-left: auto
+  margin-right: auto
+
+.header-logo
+  width: 382px
+  margin-left: auto
+  margin-right: auto
+
+nav
+  width: 1120px
+  background: $primary-color
+  margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 83px
+  padding: 43px 0
+  
+
+.nav-items
+  width: 950px
+  text-transform: uppercase
+  display: flex
+  align-items: center
+
+
+.nav-logo
+  width: 87px
+  margin-right: 90px
+
+.nav-links
+  width: 534px
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+  justify-content: space-between
+  font-family: 'Josefin Sans', sans
+  font-weight: 300
+        
+.nav-search
+  width: 162px
+  margin-left: auto
+
+  
+.bananas
+  background-color: $primary-color
+  width: 1120px
+  margin: auto
+  padding-top: 50px
+  padding-bottom: 55px
+  padding-left: 93px  
+  box-sizing: border-box
+  margin-bottom: 83px
+
+.bananas-header
+  font-size: 24px
+  font-family: 'Playfair Display', serif
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #921026
+      
+.bananas-description
+  width: 360px
+  font-family: 'Josefin Sans', sans-serif
+  font-weight: 300
+  letter-spacing: 0.025em
+  
+.bananas-logo
+  width: 252px
+    
+.bananas-button
+  padding: 0
+  @extend %button-reset
+  width: 105px
+  border: 1.0px solid #c2c2c2
+  font-family: 'Josefin Sans', sans
+  font-size: 12px
+  font-weight: 300
+  letter-spacing: 0.025em
+  padding-top: 7px
+  padding-bottom: 7px
+  padding-left: 6px
+  padding-right: 6px 
+      
+
+  
+.dishes
+  background-color: $secondary-color
+  width: 1120px
+  margin: auto
+  padding: 50px 40px 45px 53px
+  box-sizing: border-box
+  display: flex
+  margin-bottom: 83px
+
+.dishes-wrapper
+  width: 1023px
+  margin-left: auto
+  margin-right: auto
+  display: flex
+  justify-content: space-between
+
+.dish
+  width: 313px
+
+.dish-image
+  width: 313px
+  margin-bottom: 5px
+
+.dish-description
+  margin-top: 0
+  font-family: 'Josefin Sans', sans
+  font-size: 18px
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #000000
+  margin-bottom: 5px
+  
+.dish-descriptiton-elements 
+  width: 122px
+  font-family: 'Open Sans', sans
+  font-size: 12px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: #555555
+  margin-top: 0
+  display: flex
+
+.clock-icon
+  width: 11px
+
+.dish-paragraph
+  padding: 0
+  margin: 0
+  margin-right: 3px
+
+.line
+  margin-right: 3px
+  width: 1px
+
+.comment
+  width: 18px
+  display: flex
+  justify-content: space-between
+  
+.comment-icon
+  width: 13px
+
+.view
+  width: 36px
+  display: flex
+  justify-content: flex-start
+
+.view-icon
+  width: 13px
+          
+.cinnamon
+  width: 1120px
+  background: $secondary-color
+  margin-left: auto
+  margin-right: auto
+  display: grid
+  grid-template-columns: 520px 1fr
+  grid-template-rows: 1fr
+  grid-template-areas: "cinnamon-image cinnamon-recipe"
+  padding-bottom: 0
+  margin-bottom: 137px
+
+.cinnamon-image
+  grid-area: cinnamon-image
+  background: url('../img/cinnamon.png') 
+  background-position: center 
+  background-repeat: no-repeat
+  background-size: cover
+
+.cinnamon-recipe
+  grid-area: cinnamon-recipe
+  padding-top: 40px
+  padding-left: 42px
+  padding-bottom: 22px  
+
+.cinnamon-recipe-header
+  width: 492px
+  font-family: 'Playfair Display', serif
+  font-size: 32px
+  font-weight: 900
+  letter-spacing: 0.025em
+  color: #055555
+  margin-bottom: 13px
+
+.cinnamon-recipe-bar
+  width: 480px
+  margin-bottom: 24px
+  display: flex
+  justify-content: space-between
+
+.cinnamon-recipe-elements
+  width: 153px
+  font-family: 'Open Sans', sans
+  font-size: 16px
+  align-self: flex-start
+  display: flex
+  align-items: flex-end
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #555555
+
+.cinnamon-timing
+  padding: 0
+  margin: 0
+  margin-right: 10px
+      
+.cinnamon-clock-icon
+  width: 14px
+  margin-right: 2px
+
+.cinnamon-rectangles
+  padding: 0
+  width: 29px
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  margin-right: 10px
+        
+.rectangle
+  width: 5px
+
+.recipe-difficulty
+  padding: 0
+  margin: 0
+  font-family: 'Josefin Sans', sans
+  font-size: 18px
+  font-weight: 300
+
+.cinnamon-recipe-button
+  @extend %button-reset
+  width: 105px
+  border: 1.0px solid #c2c2c2
+  font-family: 'Josefin Sans', sans
+  font-size: 12px
+  font-weight: 300
+  letter-spacing: 0.025em
+  text-transform: uppercase
+  align-self: flex-end
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 9px 10px 9px 
+
+.cinnamon-recipe-description
+  width: 480px
+  font-size: 16px
+  letter-spacing: 0.025em
+  color: #000000
+
+.cinnamon-recipe-instruction
+  padding: 0
+  font-family: 'Josefin Sans', sans
+  font-weight: 300
+  margin-bottom: 16px
+        
+.cinnamon-recipe-directions-header
+  font-family: 'Playfair Display', serif
+  font-weight: 700
+  padding-bottom: 0
+  margin: 0
+  margin-bottom: 19px
+        
+.cinnamon-recipe-direction
+  font-family: 'Josefin Sans', sans
+  font-weight: 400
+  
+.wrapper
+  width: 1120px
+  margin: 0 auto 150px
+  display: flex 
+
+.not-found
+  margin-right: 84px
+  width: 518px
+  padding-top: 23px
+
+.not-found-header
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 20px
+  font-weight: 400
+  letter-spacing: 0.025em
+  margin-left: 44px
+  margin-bottom: 11px
+    
+.not-found-styled-line 
+  width: 440px
+  height: 2px
+  opacity: 0.2
+  background-color: #555555
+  margin: 0 45px 145px 33px
+
+.sorry
+  width: 130px
+  margin: 0 auto 108px
+
+.sorry-header
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 34px
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #000000
+  margin: 0 189 4px 199px
+  text-align: center
+    
+.sorry-text
+  font-family: 'Playfair Display', serif
+  font-weight: 900
+  letter-spacing: 0.025em
+  color: #a9a9a9
+  margin-bottom: 16px
+  text-align: center
+  text-transform: uppercase
+
+.sorry-img
+  width: 31px
+  margin-left: 55px
+
+.not-found-button
+  @extend %button-reset
+  width: 105px
+  border: 1px solid #c2c2c2
+  margin-right: auto
+  padding: 9px 38px 9px 37px
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 12px
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto 52px
+  
+.author
+  width: 518px
+  padding-top: 23px
+  // margin-right: auto
+  background: $secondary-color
+
+.author-header
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 20px
+  font-weight: 400
+  letter-spacing: 0.025em
+  margin-left: 44px
+  margin-bottom: 11px
+  
+.author-styled-line 
+  width: 440px
+  height: 2px
+  opacity: 0.2
+  background-color: #555555
+  margin: 0 auto 24px
+
+.container
+  display: flex
+
+.author-image
+  width: 128px
+  margin-left: 32px
+  margin-right: 20px
+
+.author-name
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 24px
+  line-height: 1.2
+  font-weight: 700
+  letter-spacing: 0.025em
+  color: #000000
+  margin-bottom: 6px
+
+.author-country
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 16px
+  line-height: 1.2
+  font-weight: 300
+  letter-spacing: 0.025em
+  color: #000000
+  margin-bottom: 12px
+
+.social-networks-icons
+  width: 99px
+  opacity: 0.5
+  margin-bottom: 18px
+
+.author-about-styled-line
+  width: 291px
+  height: 2px
+  opacity: 0.2
+  background-color: #555555
+
+.about-lemon
+  margin-left: 181px
+  margin-bottom: 32px
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 20px
+  font-weight: 400
+  letter-spacing: 0.025em
+
+.about-lemon-text
+  width: 288px
+  margin-left: 181px
+  font-size: 14px
+  font-family: 'Josefin Sans', sans-serif
+  font-weight: 300
+  font-style: italic
+  letter-spacing: 0.025em
+  margin-bottom: 22px
+
+.signature
+  width: 163px  
+  margin-left: 314px
+  margin-bottom: 33px
+
+footer 
+  width: 1120px
+  opacity: 0.8
+  background-color: #000000
+  margin: auto
+  padding: 72px 54px 55px 86px
+  box-sizing: border-box
+
+.footer-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 15px
+
+.footer-logo
+  width: 87px
+    
+.footer-links
+  width: 401px
+  opacity: 0.5
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 12px
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #fefefe
+  padding: 0
+  margin: 0
+  list-style: none
+  display: flex
+  justify-content: space-between
+
+.footer-rights
+  text-transform: uppercase
+  display: flex
+
+.footer-rights-text
+  opacity: 0.5
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 12px
+  font-weight: 300
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: #fefefe
+  display: flex
+      
+
+.footer-rights-copyright
+  width: 12px
+  margin-right: 4px
+    
+.footer-icons
+  width: 99px
+  margin-left: auto
