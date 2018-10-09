@@ -449,7 +449,7 @@ footer {
   padding: 72px 54px 55px 86px;
   box-sizing: border-box; }
 
-.footer-wrapper {
+.footer-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
