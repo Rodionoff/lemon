@@ -31,7 +31,8 @@ img {
   width: 100%; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 header {
   width: 1120px;
