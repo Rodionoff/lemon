@@ -1,13 +1,13 @@
 # Верстка по макету
 
-## Что
+### Что
 
-Сверстанный ".psd" шаблон
+Сверстанный .psd шаблон
 
-## Как 
+### Как 
 
 С приенением Webpack, Sass, PostCss
 
-## Где
+### Где
 
-Посмотреть можно [здесь](https://rodionoff.github.io/lemon/)
+[Здесь](https://rodionoff.github.io/lemon/)
