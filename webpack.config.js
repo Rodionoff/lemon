@@ -1,3 +1,5 @@
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
@@ -11,9 +13,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [
-      {
-        test: /\.(png|jpg)$/,
+    rules: [{
+        test: /\.(woff2)$/,
         loader: "url-loader",
       },
       {
@@ -23,7 +24,20 @@ module.exports = {
           {
             loader: "css-loader"
           },
-          'sass-loader'
+          {
+            loader: "postcss-loader",
+            // options: {
+            //   ident: 'postcss',
+            //   plugins: [
+            //     require('autoprefixer')({
+            //       'browsers': ['> 1%', 'last 2 versions', 'IE > 7']
+            //     }),
+            //   ]
+            // }
+          },
+          {
+            loader: 'sass-loader'
+          }
         ]
       },
       {
@@ -39,8 +53,20 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets/',
+        to: './assets/'
+      },
+    ]),
+    new HtmlWebpackPlugin({
+      // filename is the name of the output file
+      // template is the name of the source file
+      filename: 'index.html',
+      template: 'index.html'
+    }),
     new MiniCssExtractPlugin({
       filename: "style.css"
-    })
-   ]    
+    }),
+  ]
 };
