@@ -6,7 +6,7 @@
 
 ### Как 
 
-С приенением Webpack, Sass, PostCss
+С применением Webpack, Sass, PostCss
 
 ### Где
 
