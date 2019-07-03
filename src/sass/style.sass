@@ -103,6 +103,13 @@ nav
   width: 162px
   margin-left: auto
 
+  input
+    font-family: $primary-font
+    font-weight: 300
+    padding: 3px 5px
+    
+    &::placeholder
+      color: grey
   
 .bananas
   background-color: $primary-color
@@ -126,6 +133,7 @@ nav
   font-family: $primary-font
   font-weight: 300
   letter-spacing: 0.025em
+  margin-bottom: .6rem
   
 .bananas-logo
   width: 252px
@@ -144,6 +152,7 @@ nav
   padding-left: 6px
   padding-right: 6px
   cursor: pointer
+  border-radius: 5px
 
   &:hover
     background-color: darken(#fff, 4%)
@@ -169,8 +178,16 @@ nav
   width: 313px
 
 .dish-image
+  display: block
   width: 313px
   margin-bottom: 5px
+  overflow: hidden
+
+  img
+    transition: transform .5s
+
+    &:hover
+      transform: scale(1.025)
 
 .dish-description
   margin-top: 0
@@ -315,6 +332,7 @@ nav
   align-items: center
   padding: 9px 10px 
   cursor: pointer
+  border-radius: 5px
 
   &:hover
     background-color: darken(#fff, 4%)
@@ -382,8 +400,8 @@ nav
   justify-content: center
   align-items: center
   margin: 0 auto 52px
-
   cursor: pointer
+  border-radius: 5px
 
   &:hover
     background-color: darken(#fff, 4%)

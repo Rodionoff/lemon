@@ -53,6 +53,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "style.css"
+    }),
     new CopyWebpackPlugin([
       {
         from: './src/assets/',
@@ -62,11 +65,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       // filename is the name of the output file
       // template is the name of the source file
-      filename: 'index.html',
-      template: 'index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: "style.css"
-    }),
+      filename: './index.html',
+      template: './index.html'
+    })
   ]
 };
