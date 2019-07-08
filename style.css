@@ -740,7 +740,8 @@ nav {
 .not-found {
   margin-right: 84px;
   width: 518px;
-  padding-top: 23px; }
+  padding-top: 23px;
+  background-size: cover; }
 
 .not-found-header {
   font-family: "Josefin Sans", sans;
